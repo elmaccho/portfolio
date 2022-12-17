@@ -67,3 +67,20 @@ polish.addEventListener("click", function(){
     document.getElementsByName('wiadomosc')[0].placeholder='Wiadomość'
     document.getElementById("contactme").value="Prześlij"
 })
+
+const lang_box = document.querySelector(".lang_box")
+const lang_pl = document.querySelector(".pl")
+const lang_eng = document.querySelector(".eng")
+const current_lang = document.querySelector(".current_lang")
+const current_lang_text = document.querySelector(".current_lang_text")
+
+
+lang_box.addEventListener("click", function(){
+
+    if(lang_pl.contains(current_lang_text)){
+        current_lang.style.transform="translateX(40px)"
+    }
+    else{
+        current_lang.style.transform="translateX(-40px)"
+    }
+})

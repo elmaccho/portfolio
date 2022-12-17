@@ -22,10 +22,10 @@ body {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 3s both;
-  -moz-animation: fadeIn 3s both;
-  -o-animation: fadeIn 3s both;
-  animation: fadeIn 3s both;
+  -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  animation: fadeIn 2.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -65,14 +65,6 @@ body {
   filter: drop-shadow(0px 0px 5px #C5C6C7);
 }
 
-.navOpen {
-  transform: unset;
-}
-
-.navClose {
-  transform: unset;
-}
-
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -93,6 +85,44 @@ body {
   width: 100%;
   height: 90px;
   transition: 0.3s;
+}
+.nav-bar .change_language .lang_box {
+  background-color: #14191f;
+  cursor: pointer;
+  width: 95px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+  position: relative;
+}
+.nav-bar .change_language .lang_box .pl {
+  color: #66FCF1;
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+  padding-left: 7px;
+}
+.nav-bar .change_language .lang_box .eng {
+  color: #66FCF1;
+  z-index: 1;
+  text-align: center;
+  width: 50%;
+  padding-right: 7px;
+}
+.nav-bar .change_language .lang_box .current_lang {
+  position: absolute;
+  background-color: #66FCF1;
+  width: 45px;
+  height: 25px;
+  border-radius: 15px;
+  left: 5px;
+  transition: 0.5s;
+}
+.nav-bar .change_language .lang_box .current_lang_text {
+  color: #14191f;
+  transition: 0.5s;
 }
 .nav-bar .close-btn {
   display: none;
@@ -129,6 +159,14 @@ body {
   font-family: "Rubik", sans-serif;
   transition: 0.5s;
   font-size: 17px;
+}
+
+.navOpen {
+  transform: unset;
+}
+
+.navClose {
+  transform: unset;
 }
 
 .sticky {
@@ -687,6 +725,9 @@ body {
     overflow: hidden;
     font-family: "Rubik", sans-serif;
     background-color: #14191f;
+  }
+  .nav-bar .change_language .lang_box {
+    background-color: #0B0C10;
   }
   .nav-bar .close-btn {
     display: block;

@@ -28,10 +28,10 @@ body{
 
 
 .fadeIn{
-    -webkit-animation: fadeIn 3s both;
-    -moz-animation: fadeIn 3s both;
-    -o-animation: fadeIn 3s both;
-    animation: fadeIn 3s both;
+    -webkit-animation: fadeIn 2.5s;
+    -moz-animation: fadeIn 2.5s;
+    -o-animation: fadeIn 2.5s;
+    animation: fadeIn 2.5s;
 }
 
 @-webkit-keyframes fadeIn{
@@ -67,17 +67,14 @@ body{
     }
 }
 
+
+
 .active {
     color:$font !important;
     filter:drop-shadow(0px 0px 5px $font);
 }
 
-.navOpen{
-    transform: unset;
-}
-.navClose{
-    transform: unset;
-}
+
 
 ::-webkit-scrollbar {
     width: 4px;
@@ -92,14 +89,62 @@ body{
     border-radius: 10px;
 }
 
+
+
 .nav-bar{
     position: fixed;
     top:0;
     width:100%;
     height: 90px;
     transition: 0.3s;
+    
+    .change_language{
+
+        .lang_box{
+            background-color: $background-2;
+            cursor: pointer;
+            width: 95px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 15px;
+            // background-color: blue;
+            position: relative;
+
+            .pl{
+                color:$main;
+                z-index: 1;
+                width:50%;
+                text-align: center;
+                padding-left: 7px;
+            }
+            .eng{
+                color:$main;
+                z-index: 1;
+                text-align: center;
+                width:50%;
+                padding-right: 7px;
+            }
 
 
+            .current_lang{
+                position: absolute;
+                background-color: $main;
+                width: 45px;
+                height: 25px;
+                border-radius: 15px;
+                left: 5px;
+                transition: 0.5s;
+            }
+            .current_lang_text{
+                color:$background-2;                
+                transition: 0.5s;
+            }
+        }
+
+    }
+    
     .close-btn{
         display:none;
     }
@@ -139,6 +184,14 @@ body{
             font-size: 17px;
         }
     }
+
+
+}
+.navOpen{
+    transform: unset;
+}
+.navClose{
+    transform: unset;
 }
 .sticky{
     height: 60px;
@@ -147,6 +200,8 @@ body{
     z-index: 1;
     box-shadow: $main 0px 8px 10px -12px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
+
 
 .main{
     width: 100%;
@@ -427,6 +482,7 @@ body{
         font-family: 'Rubik', sans-serif;
     }
 }
+
 
 
 @media screen and (min-width:767px) and (max-width:1023px) {
@@ -739,6 +795,8 @@ body{
     }
 }
 
+
+
 @media screen and (max-width:767px) {
 
     .navOpen{
@@ -762,6 +820,12 @@ body{
 
         background-color: $background-2;
     
+        .change_language{
+
+            .lang_box{
+                background-color: $background;
+            }}
+
         .close-btn{
             display:block;
             border:none;
@@ -1122,5 +1186,3 @@ body{
         }
     }
 }
-
-
