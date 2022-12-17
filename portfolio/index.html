@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="./typewriter.js"></script>
+    <script src="./validation.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="nav-bar navClose" id="navBar">
+        <button class="close-btn" id="closeBtn"><ion-icon name="close-outline"></ion-icon></button>
+        <div class="menu-list">
+            <a href="#home" class="current" id="lang_home">start</a>
+            <a href="#about_me" class="current" id="lang_aboutme">o mnie</a>
+            <a href="#projects" class="current" id="lang_projects">projekty</a>
+            <a href="#contact" class="current" id="lang_contact">kontakt</a>
+
+
+            <div class="lang">
+                <button class="language lang_PL" id="pl">PL</button>
+                <button class="language lang_ENG" id="en">ENG</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <main class="main">
+
+        <button class="menu-btn" id="openBtn"><ion-icon name="grid-outline"></ion-icon></button>
+        
+        <div class="home" id="home">
+            <h1 id="message"></h1>
+        </div>
+            <hr>
+
+
+        <div class="about-me" id="about_me">
+            
+            <h1 id="lang_aboutme_title">O mnie</h1>
+            <div class="me">
+                    <img src="./img/profile.jpg" alt="">
+                    <p id="lang_description">Od półtora roku uczę się tworzenia stron internetowych ze strony Front-Endu jak i Back-endu. 
+                        Choć nie posiadam doświadczenia zawodowego, ciągle poszerzam swoją wiedzę o nowe technologie. 
+                        Kiedy napotykam jakiś problem podczas pracy, staram się go samodzielnie rozwiązać, 
+                        a przy okazji wyciągać wnioski ze swoich błędów.</p>
+                    </div>
+                    <br>
+                    <div class="skills">
+                        <h1 id="lang_skills_title">Umiejetnosci</h1>
+                        <li>
+                            <h3>HTML</h3>
+                            <span class="bar"><span class="html"></span></span>
+                        </li>
+                        <li>
+                            <h3>Css</h3>
+                            <span class="bar"><span class="css"></span></span>
+                        </li>
+                        <li>
+                            <h3>JavaScript</h3>
+                            <span class="bar"><span class="javascript"></span></span>
+                        </li>
+                        <li>
+                            <h3>PHP</h3>
+                            <span class="bar"><span class="php"></span></span>
+                        </li>
+                        <li>
+                            <h3>WordPress</h3>
+                            <span class="bar"><span class="wordpress"></span></span>
+                        </li>
+                    </div>
+
+        </div>
+                <hr>
+
+        <div class="projects" id="projects">
+                <h1 id="lang_projects_title">Projekty</h1>
+        </div>
+                <hr>
+
+
+        <div class="contact" id="contact">
+                <h1 id="lang_contact_title">Kontakt</h1>
+                <form action="mailto:maciek.chojnacki22@wp.pl" name="contact" method="post" class="form">
+                    <input type="text" name="imienazw" id="" placeholder="Imię i nazwisko" onKeyup="checkform()" required><br>
+                    <input type="email" name="email" id="" placeholder="Email" onKeyup="checkform()" required><br>
+                    <input type="text" name="temat" id="" placeholder="Temat" onKeyup="checkform()" required><br>
+                    <textarea name="wiadomosc" id="" cols="10" rows="10" placeholder="Wiadomość" onKeyup="checkform()" required></textarea><br>
+                    <input id="contactme" type="submit" value="prześlij">
+                </form>
+        </div>
+    
+        <footer class="footer">
+            Copyright © Maciej Chojnacki
+        </footer>
+    </main>
+
+
+        <script src="./onscroll.js"></script>
+        <script src="./header.js"></script>
+        <script src="./language.js"></script>
+    </body>
+    </html>
