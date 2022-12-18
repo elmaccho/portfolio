@@ -98,53 +98,6 @@ body{
     height: 90px;
     transition: 0.3s;
     
-    .change_language{
-
-        .lang_box{
-            background-color: $background-2;
-            cursor: pointer;
-            width: 95px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            border-radius: 15px;
-            // background-color: blue;
-            position: relative;
-
-            .pl{
-                color:$main;
-                z-index: 1;
-                width:50%;
-                text-align: center;
-                padding-left: 7px;
-            }
-            .eng{
-                color:$main;
-                z-index: 1;
-                text-align: center;
-                width:50%;
-                padding-right: 7px;
-            }
-
-
-            .current_lang{
-                position: absolute;
-                background-color: $main;
-                width: 45px;
-                height: 25px;
-                border-radius: 15px;
-                left: 5px;
-                transition: 0.5s;
-            }
-            .current_lang_text{
-                color:$background-2;                
-                transition: 0.5s;
-            }
-        }
-
-    }
-    
     .close-btn{
         display:none;
     }
@@ -167,10 +120,23 @@ body{
             transition: 0.5s;
         }
         .lang{
-            // margin-top:35px;
             position: absolute;
             right: 25px;
             width: max-content;
+
+            .selectLang{
+                color:$main;
+            }
+           select{
+                color:$main;
+                background-color: transparent;
+                border-radius: 5px;
+                border: 1px solid $main;
+                outline: none;
+            }
+            .langOption{
+                background-color: $background-2 !important;
+            }
         }
         .language{
             cursor: pointer;

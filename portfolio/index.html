@@ -20,24 +20,24 @@
     
     <div class="nav-bar navClose" id="navBar">
         <button class="close-btn" id="closeBtn"><ion-icon name="close-outline"></ion-icon></button>
-        <div class="menu-list">
-            <a href="#home" class="current" id="lang_home">start</a>
-            <a href="#about_me" class="current" id="lang_aboutme">o mnie</a>
-            <a href="#projects" class="current" id="lang_projects">projekty</a>
-            <a href="#contact" class="current" id="lang_contact">kontakt</a>
+            <div class="menu-list">
+                <a href="#home" class="current" id="lang_home">start</a>
+                <a href="#about_me" class="current" id="lang_aboutme">o mnie</a>
+                <a href="#projects" class="current" id="lang_projects">projekty</a>
+                <a href="#contact" class="current" id="lang_contact">kontakt</a>
 
 
-            <div class="lang">
-                <button class="language lang_PL" id="pl">PL</button>
-                <button class="language lang_ENG" id="en">EN</button>
-            </div>
+                    <div class="lang">
+                        <!-- <button class="language lang_PL" id="pl">PL</button>
+                        <button class="language lang_ENG" id="en">EN</button> -->
 
-            <div class="change_language">
-                <div class="lang_box">
-                    <div class="current_lang switch"></div>
-                    <span class="pl">PL</span>
-                    <span class="eng ">EN</span>
-                </div>
+
+                        <label for="lang" id="selectLang" class="selectLang">Language: </label>
+                        <select name="language" id="language">
+                            <option value="polish" class="langOption">PL</option>
+                            <option value="english" class="langOption">ENG</option>
+                        </select>
+                    </div>
             </div>
 
         </div>
