@@ -86,44 +86,6 @@ body {
   height: 90px;
   transition: 0.3s;
 }
-.nav-bar .change_language .lang_box {
-  background-color: #14191f;
-  cursor: pointer;
-  width: 95px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 15px;
-  position: relative;
-}
-.nav-bar .change_language .lang_box .pl {
-  color: #66FCF1;
-  z-index: 1;
-  width: 50%;
-  text-align: center;
-  padding-left: 7px;
-}
-.nav-bar .change_language .lang_box .eng {
-  color: #66FCF1;
-  z-index: 1;
-  text-align: center;
-  width: 50%;
-  padding-right: 7px;
-}
-.nav-bar .change_language .lang_box .current_lang {
-  position: absolute;
-  background-color: #66FCF1;
-  width: 45px;
-  height: 25px;
-  border-radius: 15px;
-  left: 5px;
-  transition: 0.5s;
-}
-.nav-bar .change_language .lang_box .current_lang_text {
-  color: #14191f;
-  transition: 0.5s;
-}
 .nav-bar .close-btn {
   display: none;
 }
@@ -148,6 +110,19 @@ body {
   position: absolute;
   right: 25px;
   width: max-content;
+}
+.nav-bar .menu-list .lang .selectLang {
+  color: #66FCF1;
+}
+.nav-bar .menu-list .lang select {
+  color: #66FCF1;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #66FCF1;
+  outline: none;
+}
+.nav-bar .menu-list .lang .langOption {
+  background-color: #14191f !important;
 }
 .nav-bar .menu-list .language {
   cursor: pointer;
